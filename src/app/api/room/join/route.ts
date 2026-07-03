@@ -28,7 +28,7 @@ export async function POST(request: Request) {
 
     // Check if the player is already registered in the array
     const existingPlayerIndex = game.players.findIndex(p => p.id === playerId);
-    
+
     if (existingPlayerIndex > -1) {
       // If they are already in, update their name (supports reconnect/tab refreshing)
       game.players[existingPlayerIndex].name = name;
@@ -43,6 +43,7 @@ export async function POST(request: Request) {
         submittedWord: "",
         votedFor: null,
         hasVoted: false,
+        isReady: false,
       });
     }
 
