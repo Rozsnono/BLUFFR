@@ -25,6 +25,11 @@ if (!cached) {
 }
 
 async function dbConnect() {
+
+    if(typeof cached === 'undefined'){
+        return;
+    }
+    
     if (cached.conn) {
         return cached.conn;
     }
