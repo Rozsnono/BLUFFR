@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Optional: Import a font from Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
+
+body {
+  color: white;
+  background-color: #020617;
+  /* A very dark blue fallback */
+}
